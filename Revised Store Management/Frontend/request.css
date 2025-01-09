@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(128, 128, 128, 0.025);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 1em;
+}
+
+.items {
+  width: 360px;
+  height: 36vh;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0px 0px 25px rgb(227, 227, 227);
+  position: relative;
+  transition: opacity 0.3s ease, transform 0.3s ease, height 0.3s ease, margin 0.3s ease;
+  flex: 1 1 calc(33.333% - 20px); /* Three items per row with 10px margin */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  opacity: 1;
+}
+
+.items.hide {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  height: 0;
+  margin: 0;
+  padding: 0; /* Ensure padding collapses */
+}
+.items.show {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+  height: auto;
+}
+
+.items:hover {
+  cursor: pointer;
+}
+
+.items img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.items-wrapper {
+  margin: 0.9em;
+}
+.items-wrapper p {
+  font-size: 25px;
+  margin-top: 10px;
+  color: rgb(26, 29, 35);
+}
+
+.available {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.available span {
+  font-size: 17px;
+  margin-top: 10px;
+  color: orangered;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: green;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 1vh;
+  border-radius: 10px;
+  background: green;
+  margin-top: 0.3em;
+  font-size: 25px;
+}
+
+.no-items {
+  display: flex;
+}
+
+.choose {
+  flex: 1;
+}
+
+.choose button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+  align-items: center;
+  cursor: pointer;
+}
+
+.choose button:hover {
+  background: green;
+  color: white;
+}
+
+.choose input {
+  width: 30px;
+  border: 1px solid green;
+  outline: none;
+  align-content: center;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.inventory {
+  margin-top: 1.7em;
+}
+
+.done-button {
+  padding: 6px 9px;
+  background-color: rgba(0, 128, 0, 0.473);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: absolute;
+  border-radius: 3px;
+  top: 0;
+  right: 0;
+}
+
+.done-button:hover {
+  background-color: green;
+}
+
+#roomNomber {
+  width: 90px;
+  height: 7vh;
+  margin: 1em;
+  border-radius: 4px;
+  background: green;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0.8em;
+  color: #fff;
+}

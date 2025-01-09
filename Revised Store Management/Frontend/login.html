@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <title>MLGDRD -Login</title>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="Assets\MLGLOGO.png" alt="logo" class="logo">
+        <form action="http://localhost:3000/login" method="post" class="form" id="loginForm">
+            <div class="email">
+                <img src="Assets\user.png" alt="">
+                <input type="number" name="email" id="email" placeholder="ID number" required>
+            </div>
+            <div class="email">
+                <img src="Assets/password.png" alt="" style="filter: invert(100%);">
+                <input type="password" name="password" id="password" placeholder="Your password" required>
+            </div>
+            <div class="show-password">
+                <input type="checkbox" name="" id="show-password">
+                <label for="show-password" id="show-text">Show Password</label>
+            </div>
+            <span><a href="forgot-password.html">Forgot password?</a></span>
+            <button type="submit" class="btn">Login</button>
+            <p>Don't have an id yet? <a href="signUp.html">Request</a></p>
+        </form>
+        <div id="message"></div>
+    </div>
+    <h3 class="heading">Store Ma<ema>na</ema>gement</h3>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="request.css" />
+    <title>MLGDRD - Request</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="items">
+          <div class="items-wrapper" data-id="1">
+            <img src="Assets/paper-roll.png" alt="" />
+            <p>Toilet Rolls (Whole)</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span></span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="2">
+            <img src="Assets/chair.png" alt="" />
+            <p>Office Chairs</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span></span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="3">
+            <img src="Assets/ceiling-fan.png" alt="" />
+            <p>Ceiling Fans</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="4">
+            <img src="Assets/bulb.png" alt="" />
+            <p>Light Bulb</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="5">
+            <img src="Assets/lotion.png" alt="" />
+            <p>Sanitizers</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="6">
+            <img src="Assets/case.png" alt="" />
+            <p>Toners</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="7">
+            <img src="Assets/copy-machine.png" alt="" />
+            <p>Photocopier</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="8">
+            <img src="Assets/paper.png" alt="" />
+            <p>A4 Sheets</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="9">
+            <img src="Assets/print.png" alt="" />
+            <p>Printers</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="10">
+            <img src="Assets/pen.png" alt="" />
+            <p>Pencils</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="11">
+            <img src="Assets/broom.png" alt="" />
+            <p>Brooms</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="12">
+            <img src="Assets/folder.png" alt="" />
+            <p>Temporary Jacket</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="13">
+            <img src="Assets/sticky-note.png" alt="" />
+            <p>Sticky Notes</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="14">
+            <img src="Assets/paper-envelope.png" alt="" />
+            <p>Brown Envelope</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-wrapper" data-id="15">
+            <img src="Assets/recycle-bin.png" alt="" />
+            <p>Recycle Bin</p>
+            <div class="available">
+              <span id="stocking"></span>
+              <div class="indicator"></div>
+            </div>
+            <div class="inventory">
+              <div class="no-items">
+                <div class="choose">
+                  <button>-</button>
+                  <input type="text" placeholder="0" />
+                  <button>+</button>
+                </div>
+                <span>50/50</span>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <button class="done-button" style="display: none">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="roomNomber">
+      <h3 id="selector"></h3>
+    </div>
+    <div class="search">
+      <input
+        type="search"
+        placeholder="Search Items"
+        id="search"
+        style="
+          position: fixed;
+          top: 0;
+          right: 0;
+          margin-top: 5em;
+          margin-right: 1em;
+          padding: 0.5em;
+          width: 250px;
+          outline: green;
+          border: 1px solid gray;
+          border-radius: 4px;
+          font-size: 15px;
+          display: none;
+        "
+      />
+
+      <button
+        id="btn-search"
+        style="
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          position: fixed;
+          top: 0;
+          right: 0;
+          margin-top: 5em;
+          margin-right: 1em;
+          background: green;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <img
+          src="Assets\search-interface-symbol.png"
+          style="width: 20px; filter: invert(100%)"
+        />
+      </button>
+    </div>
+
+    <script src="inventory.js"></script>
+    <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const search = document.getElementById("search");
+        const searchbtn = document.getElementById("btn-search");
+
+        // Show the search bar when the search button is clicked
+        searchbtn.addEventListener("click", () => {
+          search.style.display = "block";
+          searchbtn.style.display = "none";
+        });
+
+        // Hide the search bar when the mouse leaves the search area
+        search.addEventListener("mouseout", () => {
+          search.style.display = "none";
+          searchbtn.style.display = "block";
+        });
+
+        // Get all item elements on the website
+        const items = document.querySelectorAll(".items");
+        const container = document.querySelector(".wrapper");
+
+        // Add event listener to the search bar input
+        search.addEventListener("input", (e) => {
+          const searchQuery = e.target.value.toLowerCase();
+
+          // Clear the container
+          container.innerHTML = "";
+
+          // Filter the items to match the search query and append them
+          items.forEach((item) => {
+            const itemName = item.querySelector("p").textContent.toLowerCase();
+
+            if (itemName.includes(searchQuery)) {
+              item.classList.remove("hide");
+              item.classList.add("show");
+              container.appendChild(item); // Append matching items
+            } else {
+              item.classList.remove("show");
+              item.classList.add("hide");
+            }
+          });
+        });
+      });
+
+      const currentqty = document.getElementById("currentQty");
+      const stock = document.getElementById("stocking");
+      const progressBar = document.querySelector("progress-bar");
+
+      if (currentqty === 0) {
+        stock.style.color = "red";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const userItemsContainer = document.querySelector(".items");
+
+        // Function to load data from Local Storage and update user panel
+        function loadUserData() {
+          Object.keys(localStorage).forEach((key) => {
+            if (key.startsWith("item-")) {
+              const itemId = key.split("item-")[1];
+              const { name, status, quantity } = JSON.parse(
+                localStorage.getItem(key)
+              );
+
+              // Update existing item in user panel
+              const userPanelItem = document.querySelector(
+                `.items-wrapper[data-id="${itemId}"]`
+              );
+              if (userPanelItem) {
+                const nameElem = userPanelItem.querySelector("p");
+                const statusElem = userPanelItem.querySelector("#stocking");
+                const quantityElem =
+                  userPanelItem.querySelector(".no-items span");
+                const indicatorElem = userPanelItem.querySelector(".indicator");
+                const progressBarElem =
+                  userPanelItem.querySelector(".progress-bar");
+                const inputElem = userPanelItem.querySelector(".choose input");
+
+                if (nameElem) nameElem.textContent = name;
+                if (statusElem) statusElem.textContent = status;
+                if (quantityElem)
+                  quantityElem.textContent = `${quantity}/${quantity}`;
+                if (indicatorElem)
+                  indicatorElem.style.backgroundColor =
+                    quantity === "0" ? "orangered" : "green";
+                if (progressBarElem)
+                  progressBarElem.style.backgroundColor =
+                    quantity === "0" ? "orangered" : "green";
+                if (inputElem) inputElem.value = quantity;
+
+                // Log the updated item
+                console.log(`User Panel Updated: ${itemId}`, {
+                  name,
+                  status,
+                  quantity,
+                });
+
+                // Add event listeners for add and subtract buttons
+                const minusButton = userPanelItem.querySelector(
+                  ".choose button:nth-child(1)"
+                );
+                const plusButton = userPanelItem.querySelector(
+                  ".choose button:nth-child(3)"
+                );
+
+                if (minusButton) {
+                  minusButton.addEventListener("click", function () {
+                    updateQuantity(itemId, -1);
+                  });
+                }
+
+                if (plusButton) {
+                  plusButton.addEventListener("click", function () {
+                    updateQuantity(itemId, 1);
+                  });
+                }
+              } else {
+                // Log if item not found
+                console.log(`User Panel Item Not Found: ${itemId}`);
+              }
+            }
+          });
+        }
+
+        // Function to update quantity and local storage
+        function updateQuantity(itemId, change) {
+          const userPanelItem = document.querySelector(
+            `.items-wrapper[data-id="${itemId}"]`
+          );
+          const inputElem = userPanelItem.querySelector(".choose input");
+          const quantityElem = userPanelItem.querySelector(".no-items span");
+          const indicatorElem = userPanelItem.querySelector(".indicator");
+          const progressBarElem = userPanelItem.querySelector(".progress-bar");
+          const statusElem = userPanelItem.querySelector("#stocking");
+
+          let newQuantity = parseInt(inputElem.value) + change;
+          if (newQuantity < 0) newQuantity = 0;
+
+          inputElem.value = newQuantity;
+          quantityElem.textContent = `${newQuantity}/${newQuantity}`;
+          indicatorElem.style.backgroundColor =
+            newQuantity === 0 ? "orangered" : "green";
+          progressBarElem.style.backgroundColor =
+            newQuantity === 0 ? "orangered" : "green";
+          statusElem.textContent =
+            newQuantity === 0 ? "Out of Stock" : "In Stock";
+
+          const updatedData = {
+            name: userPanelItem.querySelector("p").textContent,
+            status: statusElem.textContent,
+            quantity: newQuantity,
+          };
+          localStorage.setItem(`item-${itemId}`, JSON.stringify(updatedData));
+
+          console.log(`Quantity Updated: ${itemId}`, { newQuantity });
+        }
+
+        // Load user data on page load
+        loadUserData();
+      });
+    </script>
+  </body>
+</html>

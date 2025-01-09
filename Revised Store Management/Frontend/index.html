@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <title>MLGDRD - Store Management</title>
+  </head>
+
+  <body>
+    <div class="top-section">
+      <nav class="nav">
+        <img src="Assets/MLGLOGO.png" alt="" class="logo" />
+        <button
+          class="btn-1"
+          id="login"
+          onclick="window.location.href='login.html'"
+        >
+          Login
+        </button>
+      </nav>
+    </div>
+    <div class="store">
+      <div class="request">
+        <img class="img" src="Assets/user.png" alt="" />
+        <h3>Make A Request</h3>
+        <p>To secure your pressing needs, make a request and get it done</p>
+        <button class="btn" id="trigger" id="proceed1">Proceed</button>
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <h2>MLGDRD</h2>
+            <p>Please enter your office room number</p>
+            <form method="post" id="Myform">
+              <input
+                type="number"
+                id="rnumber"
+                placeholder="Room number (eg. 30)"
+                required
+              />
+              <div class="buttons">
+                <button id="close" class="btn">Cancel</button>
+                <button id="submit" class="btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="request">
+        <img
+          class="img"
+          src="Assets/password.png"
+          alt=""
+          style="filter: invert(100%)"
+        />
+        <h3>Make A Complaint</h3>
+        <p>Complain about a pressing need, or an unsatisfactory service</p>
+        <button
+          class="btn"
+          id="proceed2"
+          onclick="window.open('complain.html', '_self')"
+        >
+          Proceed
+        </button>
+      </div>
+      <div class="request">
+        <img class="img" src="Assets/mail (1).png" alt="" />
+        <h3>Make A Suggestion</h3>
+        <p>Suggest something you wish to be done by the store</p>
+        <button
+          class="btn"
+          id="proceed3"
+          onclick="window.open('Suggest.html', '_self')"
+        >
+          Proceed
+        </button>
+      </div>
+    </div>
+    <div class="emm"></div>
+
+    <script src="index.js"></script>
+    <script scr="inventory.js"></script>
+  </body>
+</html>
